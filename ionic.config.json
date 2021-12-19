@@ -1,0 +1,7 @@
+{
+  "name": "sideNavMenu",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
