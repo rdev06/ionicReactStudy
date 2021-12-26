@@ -106,5 +106,5 @@ ion-menu.show-menu{
   --width: 55%;
 }
 ion-menu.menu-pane-visible{
-  width: 200px;
+  width: 0%;
 }
