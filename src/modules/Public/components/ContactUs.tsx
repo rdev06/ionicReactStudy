@@ -1,5 +1,5 @@
 const ContactUs: React.FC = () => (
-    <p>Contact Us</p>
+    <p>Contact Us Page</p>
   );
   
   export default ContactUs;

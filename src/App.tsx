@@ -2,7 +2,7 @@ import { IonApp, IonRouterOutlet, IonSplitPane, setupIonicReact } from '@ionic/r
 import { IonReactRouter } from '@ionic/react-router';
 import { Redirect, Route } from 'react-router-dom';
 import Menu from './components/Menu';
-import Public from './modules/Public/Index';
+import Public from './modules/Public';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -33,12 +33,8 @@ const App: React.FC = () => {
         <IonSplitPane contentId="main">
           <Menu menuItems={true ? loggedOut : loggedIn}/>
           <IonRouterOutlet id="main">
-            <Route path="/" exact={true}>
-              <Redirect to="/Home" />
-            </Route>
-            <Route path="/public/:name" exact={true}>
-              <Public />
-            </Route>
+          <Redirect exact path="/" to="public/Home" />
+            <Route path="/public/:name" component={Public} />
           </IonRouterOutlet>
         </IonSplitPane>
       </IonReactRouter>

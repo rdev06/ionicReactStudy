@@ -30,9 +30,7 @@ const Menu: React.FC<{ menuItems: AppPage[] }> = ({ menuItems }) => {
             return (
               <IonMenuToggle key={index} autoHide={false}>
                 <IonItem
-                  className={
-                    location.pathname === appPage.url ? "selected" : ""
-                  }
+                  className={ location.pathname === appPage.url ? "selected" : ""}
                   routerLink={appPage.url}
                   routerDirection="none"
                   lines="none"
