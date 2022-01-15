@@ -3,4 +3,5 @@ export interface AppPage {
   iosIcon: string;
   mdIcon: string;
   title: string;
+  default?:Boolean;
 }
